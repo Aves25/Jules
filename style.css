@@ -1,0 +1,151 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+
+body {
+    background-color: #f8c8dc;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: black;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 700px;
+
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+/* Title */
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+/* Button and tulip */
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Button */
+
+button {
+    padding: 14px 28px;
+
+    background: white;
+    color: black;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    transition: transform 0.25s ease,
+                background-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+button:hover {
+    background-color: #ffe7f1;
+    transform: scale(1.05);
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Tulip */
+
+.tulip {
+    width: 110px;
+    height: auto;
+
+    transform-origin: bottom center;
+    animation: sway 3.5s ease-in-out infinite;
+}
+
+/* Sway animation */
+
+@keyframes sway {
+
+    0% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+
+}
+
+/* Message area */
+
+.message-container {
+    margin-top: 45px;
+    min-height: 90px;
+}
+
+/* Message text */
+
+#message {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+#message.show {
+    opacity: 1;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .button-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tulip {
+        width: 90px;
+    }
+
+    button {
+        width: 200px;
+    }
+
+}
