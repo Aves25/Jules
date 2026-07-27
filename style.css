@@ -48,8 +48,8 @@ h1 {
 }
 
 .left-image {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: auto;
     margin-right: 30px;
 }
 /* Button */
