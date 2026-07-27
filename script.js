@@ -10,7 +10,9 @@ const phrases = [
     "Thank you for putting up with me. 😂",
     "You are worth waiting for and investing all my time and effort for 😌.",
     "You make me incredibly happy 😊.",
+    "Thank you for liking me for me 🥹",
     "You're going to do some amazing things 💯.",
+    "You deserve the world and more 🌎❤️",
     "You're literally the best ❤️."
 ];
 
